@@ -1,0 +1,493 @@
+:root{
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+p {
+    margin-bottom: 5rem;
+}
+
+.main-bg {
+    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.grupo-muscular, .divisao {
+    min-height: 100vh;
+    background-color: rgb(228, 201, 162);
+    border-bottom: 0.2rem solid rgb(117, 88, 63);
+}
+
+.menu {
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid gray;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul a {
+    display: block;
+    padding: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.menu-spacing{
+    height: 6.7rem;
+}
+
+.intro-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.quadrilatero {
+    position: absolute;
+    background-color: rgb(228, 201, 162);
+    margin-top: 27.8rem;
+    width: 100%;
+    height: 50rem;
+}
+
+.intro-text, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 120rem;
+}
+
+.intro-img img {
+    width: 70%;
+    margin-left: 20rem;
+    margin-top: -10rem;
+    height: auto;
+    border-radius: 20%;
+}
+
+.importancia-content{
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+
+.container iframe {
+    width: 100%;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.grid-one-content h2{
+    margin-top: 0;
+}
+
+.grid{
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid a {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+
+.grid-fotos{
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.foto {
+    width: 100%;
+    max-width: 30rem;
+    max-height: 30rem;
+    overflow: hidden;
+}
+
+.foto img {
+    transition: all 300ms ease-in-out;
+}
+
+.foto img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.divisao-content{
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+
+table caption {
+    font-style: italic;
+}
+
+.tabela-um {
+    min-width: 36rem;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid rgb(140 140 140);
+}
+
+td, th {
+    border: 1px solid rgb(71, 71, 71);
+    padding: 8px 6px;
+    text-align: center;
+  }
+
+.responsive-table {
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.tabela-dois {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid rgb(70, 70, 70);
+    position: relative;
+    margin-top: 8rem;
+}
+
+.cabecalho {
+    background-color: rgb(160, 138, 118);
+}
+
+.contact-form {
+    grid-column: span 2;
+    background-color: rgb(228, 201, 162);
+    padding: 3rem;
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    box-sizing: border-box;
+    border: none;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.form-group button {
+    border: 0.5rem solid white;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: black;
+    color: rgb(255, 255, 255);
+}
+
+.contato-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.contato-text, .contato-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 120rem;
+}
+
+.contato-img img {
+    margin-left: auto;
+    width: 70%;
+    border-radius: 20%;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 1070px) {
+
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-img img{
+        width: 70%;
+        margin: auto;
+    }
+
+    .quadrilatero {
+        position: absolute;
+        background-color: rgb(228, 201, 162);
+        margin-top: 27.8rem;
+        width: 100%;
+        height: 50rem;
+        display: block;
+        bottom: 35rem;
+    }
+
+    .contato-content {
+        max-width: 64rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+    }
+
+    .contato-img {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10rem;
+        
+    }
+
+    .grid-one-content .grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 800px) {
+
+    .quadrilatero {
+        position: absolute;
+        background-color: rgb(228, 201, 162);
+        margin-top: 27.8rem;
+        width: 100%;
+        height: 70rem;
+        display: block;
+        top: 20rem;
+    }
+
+    .menu-spacing {
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: "☰";
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(117, 88, 63);
+        border-radius: 10%;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: "X";
+    }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu ul a {
+        display: block;
+        padding: 2rem;
+        transition: all 300ms ease-in-out;
+    }
+
+    .intro-content {
+        margin-top: 37rem;
+    }
+
+    .grid-fotos {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .importancia-content h2 {
+        font-size: 3rem;
+    }
+    
+}
+
+
+@media (max-width: 550px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--gap);
+    }
+
+    .container iframe {
+        width: 100%;
+    }
+
+}
